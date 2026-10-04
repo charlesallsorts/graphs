@@ -1,62 +1,64 @@
-Dict Graph Builder
+# Dict Graph Builder
 
-Dict Graph Builder is a small web application for creating and visualising graphs from Python dictionaries.
+A small web application for creating and visualising graphs from Python dictionaries.
 
-What it does
+## Features
 
-The application provides a simple form where you can enter graph information. It then:
+- Build a graph from a simple form
+- Live graph visualisation
+- Automatic generation of the corresponding Python dictionaries
+- Edit the generated dictionaries directly
+- Load edited dictionaries back into the form
+- Drag nodes to rearrange the graph
+- Zoom and pan the graph
+- **Re-layout** button to automatically arrange the graph
 
-Creates a visual graph from the entered data.
+## Usage
 
-Generates the corresponding Python dictionaries.
+1. Open the application in a web browser.
+2. Fill in the graph information using the form.
+3. The graph appears in the visualisation area.
+4. The corresponding Python dictionaries appear in the **Python dicts** section.
+5. Click **Copy** to copy the generated dictionaries.
+6. Edit the dictionaries if needed, then click **Apply to form** to update the graph.
+7. Drag nodes, zoom, or pan to explore the graph.
 
-Lets you edit the generated dictionaries directly.
+## Project Structure
 
-Allows the edited dictionaries to be loaded back into the form.
-
-Supports dragging nodes to rearrange the graph.
-
-Supports zooming and panning the graph.
-
-Provides a Re-layout button to automatically arrange the graph.
-
-How to use
-
-Open the application in a web browser.
-
-Fill in the graph information using the form.
-
-The graph will be displayed in the visualisation area.
-
-The corresponding Python dictionaries will appear in the Python dicts section.
-
-Use Copy to copy the generated dictionaries.
-
-You can edit the dictionaries and select Apply to form to update the graph.
-
-Drag nodes, zoom, or pan the graph to explore it.
-
-Files
+```
 .
 ├── index.html
 ├── style.css
 └── main.js
+```
 
+| File         | Description                                                   |
+| ------------ | ------------------------------------------------------------- |
+| `index.html` | Application layout and interface                              |
+| `style.css`  | Styling for the application                                   |
+| `main.js`    | Graph creation, dictionary generation, and user interactions  |
 
-index.html — Application layout and interface.
+## Running the Application
 
-style.css — Styling for the application.
+No server or build step is required. Simply open `index.html` directly in a modern web browser.
 
-main.js — Graph creation, dictionary generation, and interactions.
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/dict-graph-builder.git
+cd dict-graph-builder
 
-Running the application
+# Then open index.html in your browser
+```
 
-No server is required. Open index.html directly in a modern web browser.
+## Contributing
 
-Contributing
+Contributions are welcome! If you'd like to improve Dict Graph Builder, whether by adding a feature, fixing a bug, or making another improvement, please:
 
-Contributions are welcome! If you'd like to improve Dict Graph Builder, add a feature, fix a bug, or make another improvement, feel free to contribute to the code.
+1. Fork the repository
+2. Create a new branch for your changes
+3. Commit your changes
+4. Open a Pull Request (PR)
 
-Simply open a Pull Request (PR) with your changes. We’ll review the PR and, if everything looks good, get it merged.
+We'll review your PR and, if everything looks good, merge it.
 
 Thanks for helping improve Dict Graph Builder!

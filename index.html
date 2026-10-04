@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dict Graph Builder</title>
+<link rel="stylesheet" href="./style.css">
+
+
+</head><body>
+<header><b>Dict Graph Builder</b>
+    <span>Fill the form, get the graph + dict</span>
+    <button class="s" id="fit">Re-layout</button></header>
+<main>
+<div class="ed">
+ <div id="form">
+
+ </div>
+ <div class="out">
+    <div class="bar">
+        <b>Python dicts</b>
+            <button class="s sm" id="apply" title="Load edited dicts back into the form">
+                    Apply to form</button><button class="sm" id="copy">
+                        Copy
+            </button>
+        </div>
+        <textarea id="out" spellcheck="false">
+
+        </textarea>
+    </div>
+ <div id="st"></div>
+</div>
+<div class="vz">
+    <svg id="svg">
+        <defs>
+            <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="var(--dim)"/>
+            </marker>
+        </defs><g id="g"></g>
+    </svg>
+<div id="info">
+
+</div>
+<div class="hint">drag nodes · scroll to zoom · drag background to pan</div>
+</div>
+</main>
+<datalist id="names">
+
+</datalist>
+
+
+</body>
+<script src="./main.js"></script>
+</html>
